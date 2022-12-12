@@ -7,19 +7,19 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane prefHeight="687.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calc.HelloController">
+<AnchorPane id="aPane" prefHeight="687.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calc.HelloController">
     <children>
-        <Button onAction="#onHelloButtonClick" id="btnCalculate" layoutX="378.0" layoutY="35.0" mnemonicParsing="false" text="Recalculate" />
+        <Button id="btnCalculate" layoutX="378.0" layoutY="35.0" mnemonicParsing="false" onAction="#onHelloButtonClick" text="Recalculate" />
         <Label layoutX="26.0" layoutY="39.0" text="R1" AnchorPane.topAnchor="39.0" />
         <Label layoutX="26.0" layoutY="73.0" text="R2" />
         <Label layoutX="26.0" layoutY="107.0" text="L  center" />
         <Label layoutX="524.0" layoutY="475.0" text="L margin" />
         <Label layoutX="26.0" layoutY="174.0" text="Angle Big" />
-        <TextField id="radius_small" layoutX="134.0" layoutY="35.0" AnchorPane.topAnchor="39.0" />
-        <TextField id="radius_big" layoutX="135.0" layoutY="69.0" />
-        <TextField id="length_center" layoutX="135.0" layoutY="103.0" />
-        <TextField id="length_margin" layoutX="137.0" layoutY="134.0" />
-        <TextField id="angle_big" layoutX="137.0" layoutY="170.0" />
+        <TextField id="radius_small" fx:id="radius_small" layoutX="134.0" layoutY="35.0" text="13" AnchorPane.topAnchor="39.0" />
+        <TextField id="radius_big" fx:id="radius_big" layoutX="135.0" layoutY="69.0" text="20" />
+        <TextField id="length_center" fx:id="length_center" layoutX="135.0" layoutY="103.0" text="48" />
+        <TextField id="length_margin" fx:id="length_margin" layoutX="137.0" layoutY="134.0" />
+        <TextField id="angle_big" fx:id="angle_big" layoutX="137.0" layoutY="170.0" />
         <Circle fill="DODGERBLUE" layoutX="486.0" layoutY="564.0" radius="37.0" stroke="BLACK" strokeType="INSIDE" />
         <Circle fill="DODGERBLUE" layoutX="713.0" layoutY="556.0" radius="102.0" stroke="BLACK" strokeType="INSIDE" />
         <Line endX="347.70709228515625" endY="-110.29287719726562" layoutX="374.0" layoutY="663.0" startX="112.70709228515625" startY="-99.29290771484375" />
@@ -36,12 +36,12 @@
         <Label layoutX="660.0" layoutY="534.0" text="Angle Big" />
         <Label layoutX="500.0" layoutY="570.0" text="Angle Small" />
         <Label layoutX="26.0" layoutY="208.0" text="Angle small" />
-        <TextField id="angle_small" layoutX="134.0" layoutY="204.0" />
-        <Label layoutX="580.0" layoutY="344.0" text="Full Length" />
-        <TextField id="full_lentgh" layoutX="661.0" layoutY="340.0" />
+        <TextField id="angle_small" fx:id="angle_small" layoutX="134.0" layoutY="204.0" />
+        <Label layoutX="19.0" layoutY="357.0" text="Full Length" />
+        <TextField id="full_length" fx:id="full_length" layoutX="135.0" layoutY="353.0" />
         <Label layoutX="26.0" layoutY="241.0" text="ArcCircle Big" />
         <Label layoutX="26.0" layoutY="276.0" text="ArcCicle small" />
-        <TextField id="arc_big" layoutX="135.0" layoutY="246.0" />
-        <TextField id="arc_small" layoutX="134.0" layoutY="281.0" />
+        <TextField id="arc_big" fx:id="arc_big" layoutX="135.0" layoutY="246.0" />
+        <TextField id="arc_small" fx:id="arc_small" layoutX="134.0" layoutY="281.0" />
     </children>
 </AnchorPane>
